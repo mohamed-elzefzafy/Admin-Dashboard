@@ -10,7 +10,7 @@
 
  
 ::-webkit-scrollbar {
-width: 13px;
+width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -38,7 +38,7 @@ background-color: #555;
 }
 
 /* for Firefox */
-html {scrollbar-color: #9e4673 #3d4a59;} 
+html {scrollbar-color: #280015 #3d4a59;} 
 
 
 

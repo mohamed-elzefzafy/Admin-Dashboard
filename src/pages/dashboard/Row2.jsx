@@ -6,8 +6,8 @@ import { Transactions } from "./data";
 const Row2 = () => {
   const theme = useTheme();
   return (
-    <Stack direction={"row"} flexWrap={"wrap"} gap={1.5} mt={3}>
-      <Paper sx={{ maxWidth: 900, flexGrow: 1 , minWidth : "400px" }}>
+    <Stack direction={{xs : "column" , lg : "row"}} flexWrap={"wrap"} gap={1.5} mt={1}>
+      <Paper sx={{ maxWidth: {xs : "100%" , lg : 900}, flexGrow: 1 , minWidth : "400px" }}>
 
 <Stack sx={{flexDirection : "row" , flexWrap : "wrap" , justifyContent : "space-between" , alignItems : "center"}}>
 <Box>

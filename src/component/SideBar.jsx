@@ -9,7 +9,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import List from '@mui/material/List';
-import { Avatar, Box, styled, Typography } from '@mui/material';
+import { Avatar, Box, styled, Tooltip, Typography } from '@mui/material';
 import  MuiDrawer  from '@mui/material/Drawer';
 import { useTheme } from '@emotion/react';
 import { BarChartOutlined, CalendarTodayOutlined, ContactsOutlined, HelpOutlineOutlined, HomeOutlined, MapOutlined, PeopleOutlined, PersonOutlined, PieChartOutlineOutlined, ReceiptLongOutlined, TimelineOutlined } from '@mui/icons-material';
@@ -121,7 +121,8 @@ const SideBar = ({open , handleDrawerClose}) => {
     <List>
       {array1.map((item) => (
         <ListItem key={item.path} disablePadding sx={{ display: 'block' }}>
-          <ListItemButton
+      <Tooltip title={open ? "" : item.text} placement='right' >
+      <ListItemButton
           onClick={() => navigate(item.path)}
             sx={{
               minHeight: 48,
@@ -141,6 +142,7 @@ const SideBar = ({open , handleDrawerClose}) => {
             </ListItemIcon>
             <ListItemText primary={item.text} sx={{ opacity: open ? 1 : 0 }} />
           </ListItemButton>
+      </Tooltip>
         </ListItem>
       ))}
     </List>
@@ -148,7 +150,8 @@ const SideBar = ({open , handleDrawerClose}) => {
     <List>
       {array2.map((item) => (
         <ListItem key={item.path} disablePadding sx={{ display: 'block' }}>
-          <ListItemButton
+        <Tooltip title={open ? "" : item.text} placement='right' >
+  <ListItemButton
           onClick={() => navigate(item.path)}
             sx={{
               minHeight: 48,
@@ -168,6 +171,7 @@ const SideBar = ({open , handleDrawerClose}) => {
             </ListItemIcon>
             <ListItemText primary={item.text} sx={{ opacity: open ? 1 : 0 }} />
           </ListItemButton>
+  </Tooltip>
         </ListItem>
       ))}
     </List>
@@ -176,7 +180,8 @@ const SideBar = ({open , handleDrawerClose}) => {
     <List>
       {array3.map((item) => (
         <ListItem key={item.path} disablePadding sx={{ display: 'block' }}>
-          <ListItemButton
+        <Tooltip title={open ? "" : item.text} placement='right' >
+        <ListItemButton
           onClick={() => navigate(item.path)}
             sx={{
               minHeight: 48,
@@ -196,6 +201,7 @@ const SideBar = ({open , handleDrawerClose}) => {
             </ListItemIcon>
             <ListItemText primary={item.text} sx={{ opacity: open ? 1 : 0 }} />
           </ListItemButton>
+  </Tooltip>
         </ListItem>
       ))}
     </List>

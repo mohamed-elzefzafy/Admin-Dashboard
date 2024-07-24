@@ -6,7 +6,7 @@ import Geo from "../geography/Geo";
 const Row3 = () => {
   const theme = useTheme();
   return (
-    <Stack sx={{mt : 3 , flexDirection : "row" , flexWrap : "wrap" , gap : 2}}>
+    <Stack sx={{mt : 1 , flexDirection : "row" , flexWrap : "wrap" , gap : 1.5}}>
 <Paper sx={{minWidth : "28%" , flexGrow : 1}}>
 <Typography
           color={theme.palette.secondary.main}

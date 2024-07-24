@@ -3,10 +3,14 @@ import { rows } from "./data";
 import { useTheme } from "@emotion/react";
 import { Box, Typography } from "@mui/material";
 import {
+
   AdminPanelSettingsOutlined,
   LockOpenOutlined,
   SecurityOutlined,
 } from "@mui/icons-material";
+import Heading from './../../component/Heading';
+
+
 
 const Team = () => {
   const theme = useTheme();
@@ -92,6 +96,7 @@ const Team = () => {
 
   return (
     <Box sx={{ height: 600, width: "95%", mx: "auto" }}>
+<Heading title={"TEAM"} subTitle={"Managing the Team Members"}/>
       <DataGrid rows={rows} columns={columns} />
     </Box>
   );

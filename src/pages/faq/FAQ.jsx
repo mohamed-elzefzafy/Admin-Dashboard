@@ -1,6 +1,7 @@
 import { ExpandMore } from "@mui/icons-material"
 import { Accordion, AccordionDetails, AccordionSummary, Box, Stack, Typography } from "@mui/material"
 import { useState } from "react";
+import Heading from "../../component/Heading";
 
 
 const FAQ = () => {
@@ -12,6 +13,8 @@ const FAQ = () => {
 
   return (
     <Stack flexDirection={"column"} gap={2}>
+      <Heading title="FAQ" subTitle="Frequently Asked Questions Page" />
+      
     <Accordion defaultExpanded onChange={handleChange('panel1')}>
       <AccordionSummary
         expandIcon={<ExpandMore />}

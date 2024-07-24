@@ -10,7 +10,7 @@ import { data1, data2, data3, data4 } from './data';
 const Row1 = () => {
   const theme  = useTheme();
   return (
-  <Stack direction={"row"} sx={{gap : 1 , flexWrap : "wrap" , mt : 3 , justifyContent : {xs : "center" , md : "space-between"}}}>
+  <Stack direction={"row"} sx={{gap : 1 , flexWrap : "wrap" , mt : 1 , justifyContent : {xs : "center" , md : "space-between"}}}>
 
 
 <DashboardCard scheme={"nivo"} data={data1} icon={ <EmailIcon sx={{fontSize : "23px" , color : theme.palette.secondary.main}}/>} title={"12,361"} subtitle={"Emails Sent"}  increase={"+14%"}/>

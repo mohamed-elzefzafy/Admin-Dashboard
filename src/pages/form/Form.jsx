@@ -1,6 +1,7 @@
 import { Alert, Box, Button, MenuItem, Snackbar, Stack, TextField } from "@mui/material"
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import Heading from "../../component/Heading";
 
 
 const data = [
@@ -58,6 +59,8 @@ const regExpPhone =
       noValidate
       autoComplete="off"
     >
+
+<Heading title={"CREATE USER"} subTitle={"Create a New User Profile"}/>
 
       <Stack direction={{ xs: "column", md: "row" }} gap={2}>
         <TextField error={errors.firstName ? true : false}
